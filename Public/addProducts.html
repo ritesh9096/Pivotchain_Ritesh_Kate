@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Products</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand"><a href="#">NavBar</a></div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./addProducts.html">Add Products</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="title">Product Info</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <label for="productTitle">Name</label>
+              <input
+                type="text"
+                id="productTitle"
+                placeholder="Enter your Product Title"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="username">Price</label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Enter your Price"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="description">Description</label>
+              <textarea
+                style="height: 76px; width: 300px"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="input-box">
+              <label for="productImage">Product Image URL</label>
+              <input
+                type="text"
+                id="productImage"
+                placeholder="Enter your Img_Url"
+                required
+              />
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Add Product" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

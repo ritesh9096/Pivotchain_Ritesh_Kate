@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand"><a href="#">NavBar</a></div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./addProducts.html">Add Products</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container-Product">
+      <div id="productList"></div>
+
+      <div class="productFirst" data-product-id="1">
+        <h4 class="name">NIKE Downshifter 12 Running Shoes</h4>
+        <p class="description">
+          Introducing our high-performance running shoes, designed to enhance
+          your running experience and take your workouts to the next level.
+        </p>
+        <div class="buttons-container">
+          <button class="update">Update</button>
+          <button class="delete" data-product-index="1">Delete</button>
+        </div>
+        <h4 class="price">Price : 8000/-</h4>
+        <img
+          src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/w_467,c_limit/6ba9d6f4-1967-40c3-8642-9641c4bb0539/air-jordan-1-mid-se-shoes-lCj12k.png"
+          alt="shoes.img"
+        />
+      </div>
+      <div class="productFirst" data-product-id="2">
+        <h4 class="name">Roadster</h4>
+        <p class="description">
+          Men Brown Textured PU Sneakers designed to enhance your running
+          experience and take your workouts to the next level.
+        </p>
+        <div class="buttons-container">
+          <button class="update">Update</button>
+          <button class="delete" data-product-index="2">Delete</button>
+        </div>
+        <h4 class="price">Price : 936/-</h4>
+        <img
+          src="https://assets.ajio.com/medias/sys_master/root/20230726/kOsw/64c0bd88eebac147fc8973ac/-473Wx593H-469511030-white-MODEL.jpg"
+          alt="shoes.img"
+        />
+      </div>
+      <div class="productFirst" data-product-id="3">
+        <h4 class="name">NIKE Downshifter 12 Running Shoes</h4>
+        <p class="description">
+          Introducing our high-performance running shoes, designed to enhance
+          your running experience and take your workouts to the next level.
+        </p>
+        <div class="buttons-container">
+          <button class="update">Update</button>
+          <button class="delete" data-product-index="3">Delete</button>
+        </div>
+        <h4 class="price">Price : 8000/-</h4>
+        <img
+          src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/w_467,c_limit/6ba9d6f4-1967-40c3-8642-9641c4bb0539/air-jordan-1-mid-se-shoes-lCj12k.png"
+          alt="shoes.img"
+        />
+      </div>
+      <div class="productFirst" data-product-id="4">
+        <h4 class="name">NIKE Downshifter 12 Running Shoes</h4>
+        <p class="description">
+          Introducing our high-performance running shoes, designed to enhance
+          your running experience and take your workouts to the next level.
+        </p>
+        <div class="buttons-container">
+          <button class="update">Update</button>
+          <button class="delete" data-product-index="4">Delete</button>
+        </div>
+        <h4 class="price">Price : 8000/-</h4>
+        <img
+          src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/w_467,c_limit/6ba9d6f4-1967-40c3-8642-9641c4bb0539/air-jordan-1-mid-se-shoes-lCj12k.png"
+          alt="shoes.img"
+        />
+      </div>
+      <div class="productFirst" data-product-id="5">
+        <h4 class="name">NIKE Downshifter 12 Running Shoes</h4>
+        <p class="description">
+          Introducing our high-performance running shoes, designed to enhance
+          your running experience and take your workouts to the next level.
+        </p>
+        <div class="buttons-container">
+          <button class="update">Update</button>
+          <button class="delete" data-product-index="5">Delete</button>
+        </div>
+        <h4 class="price">Price : 8000/-</h4>
+        <img
+          src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/w_467,c_limit/6ba9d6f4-1967-40c3-8642-9641c4bb0539/air-jordan-1-mid-se-shoes-lCj12k.png"
+          alt="shoes.img"
+        />
+      </div>
+
+      <div id="updateForm" style="display: none">
+        <h2>Update Product</h2>
+        <form id="updateProductForm">
+          <input type="hidden" id="productId" value="" />
+          <input
+            type="text"
+            id="updateTitle"
+            placeholder="Product Title"
+            required
+          />
+          <textarea
+            id="updateDescription"
+            placeholder="Product Description"
+            required
+          ></textarea>
+          <input
+            type="text"
+            id="updateProductImage"
+            placeholder="Product Image URL"
+            required
+          />
+          <input
+            type="number"
+            id="updatePrice"
+            placeholder="Product Price"
+            required
+          />
+          <button type="submit">Update</button>
+        </form>
+      </div>
+
+      <form id="productForm"></form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
